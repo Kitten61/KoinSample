@@ -8,5 +8,7 @@ import retrofit2.Response
 interface SomeRepository {
 
     suspend fun fetchSomeDataAsync(): Deferred<Response<PaginationResponse<SomeModel>>>
+    suspend fun fetchSomeDataAsfync(): Deferred<Response<PaginationResponse<SomeModel>>>
+    suspend fun fetchSomeDatfaAsync(): Deferred<Response<PaginationResponse<SomeModel>>>
 
 }

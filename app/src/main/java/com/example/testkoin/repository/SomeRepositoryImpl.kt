@@ -11,4 +11,11 @@ class SomeRepositoryImpl(
 ) : SomeRepository {
     override suspend fun fetchSomeDataAsync(): Deferred<Response<PaginationResponse<SomeModel>>> =
         api.getImagesAsync()
+
+    override suspend fun fetchSomeDataAsfync(): Deferred<Response<PaginationResponse<SomeModel>>> =
+        api.getImagesAsync()
+
+    override suspend fun fetchSomeDatfaAsync(): Deferred<Response<PaginationResponse<SomeModel>>> =
+        api.getImagesAsync()
+
 }
